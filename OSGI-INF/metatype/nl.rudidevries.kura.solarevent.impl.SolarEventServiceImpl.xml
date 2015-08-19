@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="nl.rudidevries.kura.solarevent.impl.SolarEventServiceImpl"
+        name="Solar event service"
+        description="Solar event service">
+        
+        <AD id="solar.latitude"
+        	name="solar.latitude"
+        	type="String"
+        	cardinality="0"
+        	required="false"
+        	default="53.021092"
+        	description="Latitude" />
+        <AD id="solar.longitude"
+        	name="solar.longitude"
+        	type="String"
+        	cardinality="0"
+        	required="false"
+        	default="5.647713"
+        	description="Longitude" />
+        <AD id="solar.timezone"
+        	name="solar.timezone"
+        	type="String"
+        	cardinality="0"
+        	required="false"
+        	default="Europe/Amsterdam"
+        	description="Timezone" />
+        <AD id="solar.accuracy"
+        	name="solar.accuracy"
+        	type="Integer"
+        	cardinality="0"
+        	required="false"
+        	default="3"
+        	description="Accuracy" />
+    </OCD>
+    <Designate pid="nl.rudidevries.kura.solarevent.impl.SolarEventServiceImpl">
+    	<Object ocdref="nl.rudidevries.kura.solarevent.impl.SolarEventServiceImpl" />
+    </Designate>
+</MetaData>
